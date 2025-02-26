@@ -1,8 +1,8 @@
 import React from "react";
+import GlobalStyle from "../styles/globalStyles";
+import ProfileHeader from "./ProfileHeader";
+import WorkHistory from "./WorkHistory";
 
-import ProfileHeader from "./components/ProfileHeader";
-import WorkHistory from "./components/WorkHistory";
-import GlobalStyle from "./styles/globalStyles";
 
 const App: React.FC = () => {
   return (
