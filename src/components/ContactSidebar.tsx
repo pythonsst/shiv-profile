@@ -45,8 +45,7 @@ const ListItem = styled.li`
 const ContactSidebar: React.FC = () => {
   return (
     <SidebarContainer>
-    
-      <ProfileImage src="/shiv.png" alt="Shiv Shankar Tiwari" />
+   <ProfileImage src={`${process.env.PUBLIC_URL}/shiv.png`} alt="Shiv Shankar Tiwari" />
 
       <SectionTitle>Contact</SectionTitle>
       <List>
@@ -54,7 +53,10 @@ const ContactSidebar: React.FC = () => {
         <ListItem>📞 +91 7007746087</ListItem>
         <ListItem>✉ pythonsst@gmail.com</ListItem>
         <ListItem>
-          🔗 <a href="https://www.linkedin.com/in/shiv-shankar-tiwari-1a">LinkedIn</a>
+          🔗{" "}
+          <a href="https://www.linkedin.com/in/shiv-shankar-tiwari-1a">
+            LinkedIn
+          </a>
         </ListItem>
       </List>
 
@@ -75,7 +77,10 @@ const ContactSidebar: React.FC = () => {
           <strong>B.Tech: Computer Science & Engineering</strong>
         </ListItem>
         <ListItem>Rajkiya Engineering College Sonbhadra</ListItem>
-        <ListItem>Final Year Project: P2P File Sharing using Wi-Fi Direct & Infrastructure Mode</ListItem>
+        <ListItem>
+          Final Year Project: P2P File Sharing using Wi-Fi Direct &
+          Infrastructure Mode
+        </ListItem>
       </List>
 
       <SectionTitle>Languages</SectionTitle>
@@ -92,7 +97,9 @@ const ContactSidebar: React.FC = () => {
 
       <SectionTitle>Certifications</SectionTitle>
       <List>
-        <ListItem>🏆 Microsoft Certified Android App Development Training, 2017</ListItem>
+        <ListItem>
+          🏆 Microsoft Certified Android App Development Training, 2017
+        </ListItem>
         <ListItem>🏆 Head of Discipline Committee & Sports Champion</ListItem>
       </List>
     </SidebarContainer>

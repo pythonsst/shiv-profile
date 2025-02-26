@@ -17,7 +17,7 @@ const ContactItem = styled.p`
 `;
 
 const Link = styled.a`
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
 `;
 
@@ -25,12 +25,23 @@ const ContactInfo: React.FC = () => {
   return (
     <ContactContainer>
       <SectionTitle>Contact</SectionTitle>
-      <ContactItem><strong>Address:</strong> Hyderabad, India 500032</ContactItem>
-      <ContactItem><strong>Phone:</strong> +91 7007746087</ContactItem>
-      <ContactItem><strong>Email:</strong> pythonssst@gmail.com</ContactItem>
       <ContactItem>
-        <strong>LinkedIn:</strong> <Link href="https://www.linkedin.com/in/shiv-shankar-tiwari-1a" target="_blank">
-          linkedin.com/in/shiv-shankar-tiwari-1a
+        <strong>Address:</strong> Hyderabad, India 500032
+      </ContactItem>
+      <ContactItem>
+        <strong>Phone:</strong> +91 7007746087
+      </ContactItem>
+      <ContactItem>
+        <strong>Email:</strong> pythonssst@gmail.com
+      </ContactItem>
+      <ContactItem>
+        <strong>LinkedIn:</strong>
+        <Link
+          href="https://www.linkedin.com/in/shivtiwari-mobile-engineer/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn Profile
         </Link>
       </ContactItem>
 
@@ -50,8 +61,12 @@ const ContactInfo: React.FC = () => {
       <ContactItem>• Hindi (Native)</ContactItem>
 
       <SectionTitle>Personal Details</SectionTitle>
-      <ContactItem><strong>Date of Birth:</strong> 10/07/1995</ContactItem>
-      <ContactItem><strong>Nationality:</strong> Indian</ContactItem>
+      <ContactItem>
+        <strong>Date of Birth:</strong> 10/07/1995
+      </ContactItem>
+      <ContactItem>
+        <strong>Nationality:</strong> Indian
+      </ContactItem>
     </ContactContainer>
   );
 };
