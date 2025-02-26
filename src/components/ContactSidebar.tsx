@@ -54,7 +54,7 @@ const ContactSidebar: React.FC = () => {
         <ListItem>✉ pythonsst@gmail.com</ListItem>
         <ListItem>
           🔗{" "}
-          <a href="https://www.linkedin.com/in/shiv-shankar-tiwari-1a">
+          <a href="https://www.linkedin.com/in/shivtiwari-mobile-engineer/">
             LinkedIn
           </a>
         </ListItem>
