@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/shiv-profile/static/js/main.6a0b83dd.js",
+    "main.js": "/shiv-profile/static/js/main.8797a7d5.js",
     "index.html": "/shiv-profile/index.html",
-    "main.6a0b83dd.js.map": "/shiv-profile/static/js/main.6a0b83dd.js.map"
+    "main.8797a7d5.js.map": "/shiv-profile/static/js/main.8797a7d5.js.map"
   },
   "entrypoints": [
-    "static/js/main.6a0b83dd.js"
+    "static/js/main.8797a7d5.js"
   ]
 }
