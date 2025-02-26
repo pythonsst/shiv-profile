@@ -1,42 +1,39 @@
 import React from "react";
-
+import styled from "styled-components";
 import ProfileHeader from "./components/ProfileHeader";
+import ContactSidebar from "./components/ContactSidebar";
 import WorkHistory from "./components/WorkHistory";
-import GlobalStyle from "./styles/globalStyles";
+import Header from "./components/Header";
+
+
+const Container = styled.div`
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+`;
+
+const MainContent = styled.div`
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+`;
 
 const App: React.FC = () => {
   return (
-    <>
-      <GlobalStyle />
-      <ProfileHeader />
-      <WorkHistory />
-    </>
+    <div>
+
+      <Header />
+      <Container>
+        <MainContent>
+          <WorkHistory />
+        </MainContent>
+        <ContactSidebar />
+      </Container>
+    </div>
   );
 };
 
 export default App;
-
-// import React from "react";
-// import ProfileHeader from "./components/ProfileHeader";
-// import WorkHistory from "./components/WorkHistory";
-// import ContactSidebar from "./components/ContactSidebar";
-// import Skills from "./components/Skills";
-// import GlobalStyle from "./styles/globalStyles";
-
-// const App: React.FC = () => {
-//   return (
-//     <>
-//       <GlobalStyle />
-//       <ProfileHeader />
-//       <div className="container">
-//         <WorkHistory />
-//         <div>
-//           <ContactSidebar />
-//           <Skills />
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default App;

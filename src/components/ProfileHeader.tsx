@@ -2,40 +2,46 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-  background: #2c2c2c;
+  background: linear-gradient(135deg, #004aad, #007bff);
   color: white;
-  padding: 30px 20px;
+  padding: 35px 40px;
   text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1100px;  // Adjust for width balance
+  margin: auto;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 `;
 
 const Name = styled.h1`
-  font-size: 26px;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
 `;
 
-const Role = styled.h2`
-  font-size: 18px;
-  font-weight: normal;
+const Title = styled.h2`
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 0.9;
 `;
 
-const Description = styled.p`
-  max-width: 800px;
-  margin: 15px auto;
-  font-size: 14px;
-  color: #ddd;
+const ExperienceBadge = styled.div`
+  background: white;
+  color: #004aad;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
 `;
 
 const ProfileHeader: React.FC = () => {
   return (
     <HeaderContainer>
-      <Name>Shiv Shankar Tiwari</Name>
-      <Role>Mobile App Engineer</Role>
-      <Description>
-        Experienced Mobile Application Engineer with 6+ years of experience in designing and 
-        developing scalable, high-performance mobile applications. Specializing in Mobile App 
-        Development, including cross-platform (React Native, Flutter) and native development 
-        (Android, iOS). Expertise in FinTech & EdTech applications, leading development teams, 
-        optimizing app performance, and integrating security protocols.
-      </Description>
+      <Name>SHIV SHANKAR TIWARI</Name>
+      <Title>Mobile App Engineer</Title>
+      <ExperienceBadge>🏆 8+ Years of Experience</ExperienceBadge>
     </HeaderContainer>
   );
 };
