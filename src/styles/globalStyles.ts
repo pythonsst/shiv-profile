@@ -12,6 +12,8 @@ const GlobalStyle = createGlobalStyle`
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.7;
+    display: flex;
+    justify-content: center;
   }
 
   h1 {
@@ -48,10 +50,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
     display: flex;
     gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
   }
 `;
 
